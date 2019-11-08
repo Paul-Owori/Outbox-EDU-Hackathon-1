@@ -21,6 +21,8 @@ const userSchema = new Schema({
 })
 
 
+
+// userSchema method for setting password
 userSchema.methods.setPassword = function (password) {
     // creating a unique salt for a particular user
     this.user_salt = crypto.randomBytes(16).toString("hex");
@@ -32,6 +34,7 @@ userSchema.methods.setPassword = function (password) {
         .toString(`hex`);
 };
 
+// userSchema method for validating password
 userSchema.methods.validPassword = function (password) {
     let hash = crypto
         .pbkdf2Sync(password, this.user_salt, 1000, 64, `sha512`)
