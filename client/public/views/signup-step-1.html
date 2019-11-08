@@ -18,19 +18,85 @@
     <title>Signup Form - Step 1</title>
 </head>
 <body>
-    <!-- Signup form step one -->
+    
     <div class="content-container">
 
-        <form action="" class="card">
-            <input type="text" name="userName" id="userName" required placeholder="Enter your preferred username">
-            <br>
-            <input type="email" name="email" id="email" required placeholder="Enter a valid email address ">
-            <br>
-            <input type="password" name="password" id="password" required placeholder="Enter a password">
-            <br>
-            <button type="submit" id="submitBtn" class="red-background">Submit</button>
-            <br>
-            <button type="reset">Reset</button>
+        <form action="" >
+            <!-- Signup form step one -->
+            <div class="card" id="stepOneCard">
+                <h3>Step 1</h3>
+                <h5>Account Setup</h5>
+                <input type="text" name="userName" id="userName" required placeholder="Enter your preferred username">
+                <br>
+                <input type="email" name="email" id="email" required placeholder="Enter a valid email address ">
+                <br>
+                <input type="password" name="password1" id="password1" required placeholder="Enter a password">
+
+                <br>
+                <input type="password" name="password2" id="password2" required placeholder="Confirm password">
+      
+               <hr>
+                <br>
+                <button type="reset">Reset</button>
+                <br>
+
+                <div> <span class="form-nav-btn" id="stepOneNext"><i class="fas fa-arrow-circle-right"></i></span> </div>
+            </div>
+
+            <!-- Signup form step two -->
+            <div class="card hidden" id="stepTwoCard">
+                <h3>Step 2</h3>
+                <h5>Personal Details</h5>
+                <input type="text" id="firstName" required placeholder="Your first name">
+                <br>
+                <input type="text" id="secondName" required placeholder="Your second name">
+                <br>
+                <input type="website" id="website" required placeholder="Your website">
+                <br>
+                <input type="radio" name="gender" id="male"><label for="#male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="#female">Female</label>
+                <br>
+                <hr>
+                <button type="button" id="stepTwoReset">Reset</button>
+                
+                <div class="next-and-prev-btns">
+                    <!-- Previous button -->
+                    <span class="form-nav-btn prev-btn" id="stepTwoPrev">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </span> 
+                    <!-- Next button -->
+                    <span class="form-nav-btn next-btn" id="stepTwoNext">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Signup form step three -->
+            <div class="card hidden" id="stepThreeCard">
+                <h3>Step 3</h3>
+                <h5>Additional details</h5>
+
+                <input type="text" id="displayName" placeholder="Your Display Name">
+                <br>
+                <textarea name="bio" id="bio" cols="22" rows="5" placeholder="Tell us about yourself..."></textarea>
+                <br>
+                <h6>Upload a copy of your National ID</h6>
+                <input type="file">
+                <br>
+
+                <hr>
+
+                 <button type="submit" id="submitBtn" class="red-background">Submit</button>
+
+                <div>
+                    <!-- Previous button -->
+                    <span class="form-nav-btn prev-btn" id="stepThreePrev">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </span> 
+                </div>
+            </div>
         </form>
     </div>
 

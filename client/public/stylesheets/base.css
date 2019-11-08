@@ -1,10 +1,14 @@
-input{
+input, textarea{
     padding:0.5rem;
     widows: 100%;
-    margin:1.5rem;
+    margin:0.5rem;
     border-radius: 8px;
     border:1px solid gray;
     font-weight:bold;
+}
+
+hr{
+    border:solid 1px rgb(192, 191, 191)
 }
 
 button{
@@ -12,7 +16,7 @@ button{
     border-radius:8px;
     padding:0.5rem;
     font-weight: bold;
-    margin:1.5rem;
+    margin:0.5rem;
     border:1px solid gray;
 }
 
@@ -87,4 +91,42 @@ body{
     width:95vw;
     height:95vh;
 
+}
+
+/* Invisible content */
+
+.hidden{
+    display:none;
+}
+
+/* Form navigation */
+
+.form-nav-btn{
+    font-size:2em;
+    cursor: pointer;
+}
+
+.form-nav-btn:hover{
+    color:#428d42;
+}
+
+.form-nav-btn:focus, .form-nav-btn:active{
+    color:#2d752d;
+}
+
+.next-and-prev-btns{
+    display:flex;
+    justify-content: space-between;
+}
+
+.next-and-prev-btns span{
+    flex:1;
+}
+
+#stepTwoPrev{
+    text-align: left;
+}
+
+#stepTwoNext{
+    text-align: right;
 }
