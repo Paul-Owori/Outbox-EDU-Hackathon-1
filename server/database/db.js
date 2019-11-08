@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const DB_URI ="mongodb+srv://Paule:Paule@byarentcluster-gfhab.mongodb.net/hackathon-1?retryWrites=true&w=majority";
 
 // Function to connect to mongoDB
-const connect = ()=>{
-    mongoose.connect(
+const connect = async ()=>{
+    await mongoose.connect(
         DB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true
@@ -19,5 +19,4 @@ const connect = ()=>{
     });
 }
 
-
-export default connect
+module.exports= {connect}
