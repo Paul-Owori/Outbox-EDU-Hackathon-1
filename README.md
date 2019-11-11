@@ -2,6 +2,9 @@
 
 This project was built for the Outbox EDU Core Hackathon 1.
 
+You can view a hosted version of this app on Heroku [here.](https://signup-and-login.herokuapp.com/)
+
+
 ### Tools and technologies
 
 This project was built with HTML, CSS, and JQuery, and the Fetch API for the frontend, MongoDB, Express.js and Node.js for the backend.
