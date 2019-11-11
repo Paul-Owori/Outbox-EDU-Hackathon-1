@@ -36,9 +36,11 @@ $(document).ready(()=>{
             console.log("A result was received", response)
             if(response.status===201){
                 console.log("Response was positive", response.status)
+                alert("Signup was successful! You can try logging in")
                 return response.json()
             }
             else{
+                alert("Signup failed! Please try again")
                 console.log("Response was negative", response.status)
                 return response.json()
             }
@@ -47,6 +49,8 @@ $(document).ready(()=>{
             console.log("The response.json", response)
         })
         .catch(error=>{
+
+            alert("Signup faied! Please try again")
             let message= `There was an error sending user ${newUser} to the backend: ${error}`
             console.error(message)
         })

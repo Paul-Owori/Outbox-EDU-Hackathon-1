@@ -53,9 +53,12 @@
                 <br>
                 <input type="website" id="website" required placeholder="Your website">
                 <br>
+                <input type="tel" placeholder="Your phone number" required>
+                <br>
                 <input type="radio" name="gender" id="male"><label for="#male">Male</label>
                 <input type="radio" name="gender" id="female"><label for="#female">Female</label>
                 <br>
+                <input type="date" name="date" id="dob" placeholder="Date of birth">
                 <hr>
                 <button type="button" id="stepTwoReset">Reset</button>
                 
@@ -85,6 +88,7 @@
                 <h6>Upload a copy of your National ID</h6>
                 <input type="file">
                 <br>
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
 
                 <hr>
 
@@ -101,6 +105,8 @@
     </div>
 
 
+      <!-- reCaptcha -->
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <!-- JQuery -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -20,9 +20,11 @@ $(document).ready(()=>{
             console.log("Result was received with status", result.status)
             if(result.status===200){
                 console.log("Login was successful with status", result.status)
+                alert("Login was successful!")
             }
             else{
                 console.log("Login failed with status", result.status)
+                alert("Login failed!")
             }
             return result.json()
         })
